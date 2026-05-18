@@ -6,7 +6,7 @@
 <title>Dark Honor Guard Command Network</title>
 <meta
 name="description"
-content="Dark Honor Guard Command Network — an elite command interface providing information, divisions, resources, and public access points."
+content="Dark Honor Guard Command Network — the official interface of the Sith Order's Dark Honor Guard, providing information, companies, resources, and public access points."
 />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,9 +21,9 @@ content="Dark Honor Guard Command Network — an elite command interface providi
 <div class="welcome-modal" id="welcomeModal" aria-hidden="false">
 <div class="welcome-panel">
 <p class="eyebrow">Transmitting From Command</p>
-<h2>Welcome to Dark Honor Guard</h2>
+<h2>Welcome to the Dark Honor Guard</h2>
 <p>
-The Dark Honor Guard are an elite and disciplined force established upon strength, loyalty, precision, and service. This command exists to provide a centralized location where members can access official information and resources.
+The Dark Honor Guard is charged with the absolute protection of the Emperor and His Councillors. Their duty extends to safeguarding all Sith sanctuaries, holdings, and members of the Order. Although foremost a defensive force, the Guard also serves as the primary enforcer of the Order — ensuring every law and mandate set by Sith authority is upheld without exception.
 </p>
 <button id="enterSiteButton" class="primary-button">Enter Network</button>
 </div>
@@ -35,8 +35,8 @@ The Dark Honor Guard are an elite and disciplined force established upon strengt
 </div>
 <nav class="site-nav" aria-label="Primary">
 <button class="nav-tab active" data-view="overview">Overview</button>
-<button class="nav-tab" data-view="divisions">Divisions</button>
 <button class="nav-tab" data-view="directory">Directory</button>
+<button class="nav-tab" data-view="companies">Companies</button>
 <button class="nav-tab" data-view="links">Resources</button>
 </nav>
 </header>
@@ -46,37 +46,22 @@ The Dark Honor Guard are an elite and disciplined force established upon strengt
 <div class="hero hero-single">
 <div class="hero-copy card">
 <p class="eyebrow">Command Network</p>
-<h2>Dark Honor Guard Interface</h2>
+<h2>The Dark Honor Guard</h2>
 <p>
-The Dark Honor Guard are an elite division built upon discipline, loyalty, authority, and operational excellence. This interface serves as the Guard's information headquarters.
+The Dark Honor Guard is charged with the absolute protection of the Emperor and His Councillors. Their duty extends to safeguarding all Sith sanctuaries, holdings, and members of the Order.
 </p>
 <p>
 <strong>
-Tasked with maintaining order and representing authority, the Dark Honor Guard operates through structure, leadership, and unity.
+Although the Guard is foremost a defensive force, it also serves as the primary enforcer for the Order, ensuring every law and mandate set by Sith authority is upheld without exception.
 </strong>
 </p>
+<p>
+The Dark Honor Guard is a specialized group of Sith tasked with the protection of all members and places belonging to the Sith Order. Admission is tryout-based, and one must attain at minimum the rank of Sith Adept to join.
+</p>
 <div class="hero-actions">
-<button class="primary-button nav-jump" data-view="divisions">View Divisions</button>
+<button class="primary-button nav-jump" data-view="companies">View Companies</button>
 <button class="secondary-button nav-jump" data-view="links">Open Resources</button>
 </div>
-</div>
-</div>
-</section>
-
-<section class="portal-view" id="divisions" data-view="divisions">
-<div class="section-block view-block">
-<div class="section-heading">
-<p class="eyebrow">Core Structure</p>
-<h2>Dark Honor Guard Divisions</h2>
-<p>Select a division to view its role and responsibilities.</p>
-</div>
-<div class="division-layout">
-<div class="division-list" id="divisionList"></div>
-<article class="division-detail card" id="divisionDetail">
-<p class="eyebrow">Division Record</p>
-<h3>Select a division</h3>
-<p>Choose one of the divisions to display its description and purpose.</p>
-</article>
 </div>
 </div>
 </section>
@@ -86,19 +71,44 @@ Tasked with maintaining order and representing authority, the Dark Honor Guard o
 <div class="section-heading">
 <p class="eyebrow">Information Board</p>
 <h2>Command Directory</h2>
+<p>Key information for visitors, recruits, and active Guardsmen.</p>
 </div>
 <div class="directory-grid directory-grid-three">
 <article class="card info-card">
 <h3>Welcome Board</h3>
-<p>Welcome to Dark Honor Guard. This network exists to provide easy access to important information and resources.</p>
+<p>
+Welcome to the Dark Honor Guard — the protective and enforcement arm of the Sith Order. This network exists to provide centralized access to official information, structure, and resources for personnel and approved visitors.
+</p>
 </article>
 <article class="card info-card">
 <h3>Recruitment</h3>
-<p>Interested in joining? Request access through official channels and await personnel review.</p>
+<p>
+Admission to the Dark Honor Guard is tryout-based. Applicants must hold a minimum rank of <strong>Sith Adept</strong> within the Sith Order. Interested members should monitor official channels for tryout announcements and await personnel review.
+</p>
 </article>
 <article class="card info-card">
 <h3>Operations</h3>
-<p>Operation notices, updates, and announcements are distributed through official communication systems.</p>
+<p>
+The Guard maintains protection of the Emperor, His Councillors, and all Sith holdings, while enforcing the laws and mandates of the Order. Operational notices, patrol schedules, and command updates are distributed through official channels.
+</p>
+</article>
+</div>
+</div>
+</section>
+
+<section class="portal-view" id="companies" data-view="companies">
+<div class="section-block view-block">
+<div class="section-heading">
+<p class="eyebrow">Core Structure</p>
+<h2>Dark Honor Guard Companies</h2>
+<p>The Guard is composed of two companies. Select one to view its role, duties, and responsibilities.</p>
+</div>
+<div class="division-layout">
+<div class="division-list" id="divisionList"></div>
+<article class="division-detail card" id="divisionDetail">
+<p class="eyebrow">Company Record</p>
+<h3>Select a company</h3>
+<p>Choose one of the companies to display its description and purpose.</p>
 </article>
 </div>
 </div>
@@ -108,7 +118,8 @@ Tasked with maintaining order and representing authority, the Dark Honor Guard o
 <div class="section-block view-block">
 <div class="section-heading">
 <p class="eyebrow">Command Access</p>
-<h2>Resources & Directives</h2>
+<h2>Resources &amp; Directives</h2>
+<p>Official communities, mandatory directives, and Guard logistics.</p>
 </div>
 <div class="link-grid" id="linkGrid"></div>
 </div>
@@ -116,7 +127,7 @@ Tasked with maintaining order and representing authority, the Dark Honor Guard o
 </main>
 
 <footer class="site-footer">
-<p>Dark Honor Guard Command Network · Official Public Interface</p>
+<p>Dark Honor Guard Command Network · Official Public Interface · A Division of The Sith Order</p>
 </footer>
 
 <script src="data.js"></script>
