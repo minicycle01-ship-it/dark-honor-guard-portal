@@ -40,5 +40,43 @@ window.SITH_ORDER_DATA = {
     },
     {
       title: 'DHG | Discord',
-      
-...(truncated)...
+      description: 'The official Dark Honor Guard Discord server.',
+      href: 'https://discord.gg/tSDjHJ3Wts',
+      category: 'Links'
+    },
+    {
+      title: 'TSO | Roblox Group',
+      description: 'The parent Sith Order Roblox group.',
+      href: 'https://www.roblox.com/groups/12345194/he-Sith-rd-r#!/about',
+      category: 'Links'
+    },
+    {
+      title: 'TSO | Discord',
+      description: 'The parent Sith Order Discord server.',
+      href: 'https://discord.gg/kNa9UY2dDK',
+      category: 'Links'
+    },
+
+    // --- Information ---
+    {
+      title: 'TSO | Trello — The Sith Code',
+      description: 'Guidelines of the Sith Order. Required reading for all DHG personnel to enforce.',
+      href: 'https://trello.com/b/5o48rAhZ/the-sith-order-sith-code',
+      category: 'Information'
+    },
+    {
+      title: 'DHG | Trello',
+      description: 'Mandatory Dark Honor Guard information. All Guardsmen must be familiar with its contents.',
+      href: 'https://trello.com/b/zGLcEANX/dark-honor-guard',
+      category: 'Information'
+    },
+
+    // --- Logistics ---
+    {
+      title: 'DHG | Logs',
+      description: 'The Dark Honor Guard logistics database. Consists of all logged database information for the Guard.',
+      href: 'https://docs.google.com/spreadsheets/d/19MJvQAB6wjwyTMMGNph_5FlL47pjxnxyUkyKBy-zUR8/edit?usp=sharing',
+      category: 'Logistics'
+    }
+  ]
+};
