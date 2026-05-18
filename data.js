@@ -41,7 +41,7 @@ window.SITH_ORDER_DATA = {
     {
       title: 'DHG | Discord',
       description: 'The official Dark Honor Guard Discord server.',
-      href: 'https://discord.gg/tSDjHJ3Wts',
+      href: 'https://discord.gg/CBSuu7k7zN',
       category: 'Links'
     },
     {
