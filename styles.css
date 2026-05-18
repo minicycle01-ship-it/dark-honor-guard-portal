@@ -139,30 +139,28 @@ main {
   padding: 1rem 1.25rem 4rem;
 }
 
+/* --- Tab stage: active tab flows in document order; inactive tabs are hidden --- */
+
 .view-stage {
   position: relative;
-  min-height: 860px;
 }
 
 .portal-view {
-  position: absolute;
-  inset: 0;
+  display: none;
   opacity: 0;
-  transform: translateX(70px) scale(0.98);
-  pointer-events: none;
-  filter: blur(10px);
+  transform: translateX(40px) scale(0.99);
+  filter: blur(6px);
   transition:
-    opacity 520ms ease,
-    transform 650ms cubic-bezier(0.19, 1, 0.22, 1),
-    filter 520ms ease;
+    opacity 420ms ease,
+    transform 520ms cubic-bezier(0.19, 1, 0.22, 1),
+    filter 420ms ease;
 }
 
 .portal-view.active-view {
+  display: block;
   opacity: 1;
   transform: translateX(0) scale(1);
-  pointer-events: auto;
   filter: blur(0);
-  z-index: 2;
 }
 
 .view-block {
@@ -524,9 +522,10 @@ main {
 
 .site-footer {
   max-width: 1180px;
-  margin: 0 auto;
-  padding: 0 1.25rem 2rem;
+  margin: 3rem auto 0;
+  padding: 2rem 1.25rem;
   color: #9f91b4;
+  border-top: 1px solid rgba(180, 140, 255, 0.08);
 }
 
 .welcome-modal {
@@ -585,10 +584,6 @@ main {
   .division-meta {
     grid-template-columns: 1fr;
   }
-
-  .view-stage {
-    min-height: 1180px;
-  }
 }
 
 @media (max-width: 640px) {
@@ -613,9 +608,5 @@ main {
   .nav-tab {
     flex: 1 1 auto;
     text-align: center;
-  }
-
-  .view-stage {
-    min-height: 1320px;
   }
 }
