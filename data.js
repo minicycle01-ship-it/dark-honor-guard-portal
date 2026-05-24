@@ -53,7 +53,7 @@ window.SITH_ORDER_DATA = {
     {
       title: 'TSO | Discord',
       description: 'The parent Sith Order Discord server.',
-      href: 'https://discord.gg/kNa9UY2dDK',
+      href: 'https://discord.gg/jGh3nvVjKd',
       category: 'Links'
     },
 
